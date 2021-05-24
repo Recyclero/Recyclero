@@ -1,2 +1,3 @@
-# transfiguratio
-Trashfiguratio — A complete change of form into a beautiful state.
+# Recyclero
+
+Changing the form of unwanted and unusable materials. Transforming the way waste is disposed and recycled.
