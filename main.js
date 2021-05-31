@@ -345,7 +345,7 @@ jQuery(function($) {
 		MenuItems.each(function() { 
 			$(this).MenuItem(); 
 			MenuHover.append("<div>" + $(this).find("div > div > span").html() + "</div>");
-			MobileNav.children("ul").append('<li><a href="#" data-section="' + $(this).find("div > div > span").attr("data-section") + '">' + $(this).find("div > div > span").html() + '</a></li>');
+			MobileNav.children("ul").append('<li><a href="' + $(this).find("div > div > span").attr("data-section") + '" data-section="' + $(this).find("div > div > span").attr("data-section") + '">' + $(this).find("div > div > span").html() + '</a></li>');
 		});
 		MenuHover.css("width", (MenuItems.length * 100) + "%");
 		MenuHover.children("div").css("width", (100 / MenuItems.length) + "%");
