@@ -78,9 +78,14 @@ jQuery(function($) {
 		});
 		SubscribeSubmit.on("click",function() {
 			if (Regex.test(SubscribeFormEmail.val())) {
-				$.post( SubscribeForm.attr("action"), { Email: SubscribeFormEmail.val() })
-					.done(function( Data ) {
-						if (Data == "1") {
+					var xhr = new XMLHttpRequest();
+					xhr.open(form.method, SubscribeForm.attr("action"), true);
+					xhr.setRequestHeader('Accept', 'application/json; charset=utf-8');
+					xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+					// Send the collected data as JSON
+					xhr.send(JSON.stringify({"email": SubscribeFormEmail.val()}));
+					xhr.onloadend = response => {
+						if (response.target.status === 200) {
 							SubscribeFormStatus.html(SubscribeFormStatus.attr("data-success"));
 							SubscribeFormStatus.addClass("Active");
 							SubscribeFormEmail.val("");
@@ -88,10 +93,7 @@ jQuery(function($) {
 							SubscribeFormStatus.html(SubscribeFormStatus.attr("data-fail"));
 							SubscribeFormStatus.addClass("Active");
 						}
-					}).fail (function() {
-						SubscribeFormStatus.html(SubscribeFormStatus.attr("data-fail"));
-						SubscribeFormStatus.addClass("Active");
-					});
+					};
 			} else {
 				SubscribeFormEmail.addClass("FailedValidation");
 				SubscribeFormStatus.removeClass("Active");
