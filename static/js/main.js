@@ -20,7 +20,7 @@ jQuery(function($) {
 	var SectionLines = $("#SectionLines");
 	var SectionBack = $(".SectionBack");
 	var SubscribeFormEmail =  $("#SubscribeFormEmail");
-	var SubscribeForm =  $("#SubscribeForm");
+	var SubscribeForm =  document.getElementById('SubscribeForm'); // $('').method / $('').action = undefined
 	var SubscribeSubmit =  $("#SubscribeSubmit");
 	var SubscribeFormStatus =  $("#SubscribeFormStatus");
 	var Countdown =  $("#Countdown");
@@ -79,7 +79,7 @@ jQuery(function($) {
 		SubscribeSubmit.on("click",function() {
 			if (Regex.test(SubscribeFormEmail.val())) {
 					var xhr = new XMLHttpRequest();
-					xhr.open(form.method, SubscribeForm.attr("action"), true);
+					xhr.open(SubscribeForm.method, SubscribeForm.action, true);
 					xhr.setRequestHeader('Accept', 'application/json; charset=utf-8');
 					xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
 					// Send the collected data as JSON
