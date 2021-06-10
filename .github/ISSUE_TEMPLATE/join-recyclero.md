@@ -11,10 +11,10 @@ assignees: ''
 
 <!-- Introduce yourself and your background -->
 
-## Reason
+### Reason
 
 <!-- Why do you want to join us? -->
 
-**GitHub:** [@username][github_handle]
+**GitHub:** [@username][github_handle] <!-- Your GitHub Profile URL -->
 
-[github_handle]: https://github.com/username <!-- Your GitHub Profile URL -->
+[github_handle]: https://github.com/username

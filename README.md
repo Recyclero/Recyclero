@@ -19,7 +19,7 @@ Some of our core beliefs are:
 
 The community is open to everyone with a demonstrated interest in collaborating on best practices. We’re starting with a small, but growing, group of contributors to ensure a good experience. If you’d like to join, let us know, and we’ll review it as we add more members.
 
-One possible way is to tell us through an issue [here](https://github.com/Recyclero/Recyclero/issues/new). You may, also, email us or get in touch at Slack. The list is limited upon your imagination. :rocket:
+One possible way is to tell us through an issue [here](https://github.com/Recyclero/Recyclero/issues/new?assignees=&labels=&template=join-recyclero.md&title=I+would+love+to+join+Recyclero). You may, also, email us or get in touch at Slack. The list is limited upon your imagination. :rocket:
 
 **Hint:** _Contributing to one of our on-going projects is the best way to express your interest_.
 
